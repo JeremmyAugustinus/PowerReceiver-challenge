@@ -98,6 +98,8 @@ public class MainActivity extends AppCompatActivity {
                     mMediaPlayer.prepareAsync();
                 } catch (IOException e) {
                     e.printStackTrace();
+                } catch (IllegalStateException e) {
+                    e.printStackTrace();
                 }
             }
         });
